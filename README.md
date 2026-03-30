@@ -29,3 +29,10 @@ Proyecto de **servicio de pedidos** usando Python y FastAPI. Permite gestionar u
 ---
 
 ## Estructura del proyecto
+PedidoService/
+ ├─ main.py          # API principal: aquí se definen los endpoints de usuarios, platos y pedidos
+ ├─ models.py        # Modelos Pydantic: define cómo se estructuran los datos (usuarios, platos, pedidos)
+ ├─ services/        # Lógica de negocio: funciones que gestionan usuarios, platos y pedidos
+ ├─ requirements.txt # Dependencias del proyecto: lista de librerías necesarias (FastAPI, Uvicorn, etc.)
+ ├─ README.md        # Documentación del proyecto: lo que estamos creando ahora
+ └─ .gitignore       # Archivos a ignorar al subir a GitHub (venv, logs, __pycache__)
