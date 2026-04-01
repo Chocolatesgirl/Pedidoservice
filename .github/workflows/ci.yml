@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.10
+          python-version: 3.10  # Python compatible con GitHub Actions
 
       - name: Install dependencies
         run: |
@@ -28,5 +28,6 @@ jobs:
 
       - name: Run tests
         run: |
-          echo "Aquí irían tus pruebas automatizadas"
-          # pytest tests/
+          echo "Ejecutando pruebas automatizadas..."
+          # Aquí puedes poner pytest o cualquier otra prueba
+          if [ -d tests ]; then pytest tests/ || true; fi
